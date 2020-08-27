@@ -1,7 +1,5 @@
 FROM debian:buster-slim
 
-COPY qemu-arm-static /usr/bin/qemu-arm-static 
-
 LABEL maintainer="admin@minenet.at"
 
 RUN apt-get update && \
