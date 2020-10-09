@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:buster-slim
 
 LABEL maintainer="admin@minenet.at"
 
