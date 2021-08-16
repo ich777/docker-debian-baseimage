@@ -2,8 +2,7 @@ FROM debian:bullseye-slim
 
 LABEL maintainer="admin@minenet.at"
 
-RUN echo -e '#Contrib and Non-Free repos\ndeb http://deb.debian.org/debian bullseye contrib non-free' >> /etc/apt/sources.list && \
-	apt-get update && \
+RUN apt-get update && \
 	apt-get upgrade -y && \
 	apt-get -y install --no-install-recommends wget locales procps && \
 	touch /etc/locale.gen && \
