@@ -3,6 +3,7 @@ FROM debian:bullseye-slim
 LABEL maintainer="admin@minenet.at"
 
 RUN apt-get update && \
+	apt-get upgrade -y && \
 	apt-get -y install --no-install-recommends wget locales procps && \
 	touch /etc/locale.gen && \
 	echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
