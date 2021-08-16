@@ -4,7 +4,6 @@ LABEL maintainer="admin@minenet.at"
 
 RUN  echo "deb http://deb.debian.org/debian bullseye contrib non-free" >> /etc/apt/sources.list && \
 	apt-get update && \
-	apt-get upgrade -y && \
 	apt-get -y install --no-install-recommends wget locales procps && \
 	touch /etc/locale.gen && \
 	echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
