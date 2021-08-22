@@ -1,5 +1,5 @@
-ARG ARCH=arm32v7/
-FROM ${ARCH}debian:bullseye-slim
+ARG ARCH=arm32v7
+FROM ${ARCH}/debian:bullseye-slim
 
 LABEL maintainer="admin@minenet.at"
 
