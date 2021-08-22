@@ -1,4 +1,4 @@
-ARG ARCH=arm32v7
+ARG ARCH=arm64v8
 FROM ${ARCH}/debian:buster-slim
 
 LABEL maintainer="admin@minenet.at"
