@@ -1,5 +1,5 @@
 ARG ARCH=arm64v8
-FROM ${ARCH}/debian:buster-slim
+FROM ${ARCH}/debian:bullseye-slim
 
 LABEL maintainer="admin@minenet.at"
 
