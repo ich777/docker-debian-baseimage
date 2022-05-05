@@ -1,6 +1,7 @@
 FROM debian:bullseye-slim
 
-LABEL maintainer="admin@minenet.at"
+LABEL org.opencontainers.image.authors="admin@minenet.at"
+LABEL org.opencontainers.image.source="https://github.com/ich777/docker-debian-baseimage"
 
 RUN  echo "deb http://deb.debian.org/debian bullseye contrib non-free" >> /etc/apt/sources.list && \
 	apt-get update && \
