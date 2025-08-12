@@ -1,9 +1,9 @@
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 
 LABEL org.opencontainers.image.authors="admin@minenet.at"
 LABEL org.opencontainers.image.source="https://github.com/ich777/docker-debian-baseimage"
 
-RUN  echo "deb http://deb.debian.org/debian bookworm contrib non-free non-free-firmware" >> /etc/apt/sources.list && \
+RUN  echo "deb http://deb.debian.org/debian trixie contrib non-free non-free-firmware" >> /etc/apt/sources.list && \
 	apt-get update && apt-get -y upgrade && \
 	apt-get -y install --no-install-recommends wget locales procps && \
 	touch /etc/locale.gen && \
