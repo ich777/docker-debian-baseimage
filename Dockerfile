@@ -1,5 +1,5 @@
 ARG ARCH=arm64v8
-FROM ${ARCH}/debian:bookworm-slim
+FROM ${ARCH}/debian:trixie-slim
 
 LABEL org.opencontainers.image.authors="admin@minenet.at"
 LABEL org.opencontainers.image.source="https://github.com/ich777/docker-debian-baseimage"
